@@ -1,0 +1,24 @@
+{
+  "name": "ts-data-structs-algs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "build && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frazierjoe/ts-data-structs-algs.git"
+  },
+  "author": "Joe Frazier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frazierjoe/ts-data-structs-algs/issues"
+  },
+  "homepage": "https://github.com/frazierjoe/ts-data-structs-algs#readme",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
