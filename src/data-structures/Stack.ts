@@ -1,4 +1,7 @@
-class Stack<T> {
+/**
+ * Stack https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
+ */
+export default class Stack<T> {
   private store: T[] = [];
 
   /**
@@ -25,23 +28,31 @@ class Stack<T> {
   }
 
   /**
-   * tests if the stack is empty
+   * @returns a boolean indicating if the stack is empty
    */
-  empty(): boolean {
+  isEmpty(): boolean {
     return this.store.length > 0;
+  }
+
+  /**
+   * @returns the number of items in the stack
+   */
+  getSize(): number {
+    return this.store.length;
   }
 
   /**
    * @param item to search for
    * @returns the top-most found or undefined if no item was found
    */
-  search(item: T): T | undefined {
+  find(item: T): T | undefined {
     let i = 0;
     const len = this.store.length;
     while (i < len) {
       if (this.store[i] === item) {
         return this.store[i];
       }
+      i += 1;
     }
     return undefined;
   }
